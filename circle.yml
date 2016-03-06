@@ -10,4 +10,4 @@ dependencies:
 
 test:
   override:
-   - exit 0
+   - bash ./exec-serverspec.sh
