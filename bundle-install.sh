@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cd serverspec
-bundle install
+ruby -v
+#bundle install
