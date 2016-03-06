@@ -1,5 +1,7 @@
 dependencies:
  pre:
-  - cd serverspec
-  - ls
+  - bash ./bundle-install.sh
 
+test:
+  override:
+   exit 0
