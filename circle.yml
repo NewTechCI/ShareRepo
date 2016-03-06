@@ -1,8 +1,5 @@
 dependencies:
  pre:
   - cd serverspec
+  - ls
 
-  - bundle install
-test:
-  override:
-   - bundle exec rake spec
