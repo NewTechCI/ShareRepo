@@ -1,6 +1,6 @@
 dependencies:
  pre:
-  - cd NewTech/ShareRepo/serverspec
+  - cd NewTechCI/ShareRepo/serverspec
   - bundle install
 test:
   override:
