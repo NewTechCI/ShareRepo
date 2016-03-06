@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
+gem 'net-ssh', '3.0.1'
 gem 'serverspec'
 gem 'rake'

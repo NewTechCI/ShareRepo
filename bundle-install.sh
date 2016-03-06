@@ -1,6 +1,6 @@
 #!/bin/bash
 
 cd serverspec
-ruby -v
-gem list net-ssh -ar
-#bundle install
+#ruby -v
+#gem list net-ssh -ar
+bundle install
