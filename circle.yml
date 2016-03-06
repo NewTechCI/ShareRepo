@@ -1,3 +1,7 @@
+dependencies:
+ pre:
+ - cd /root/serverspec
+  - bundle install
 test:
   override:
-    - exit 0
+    - bundle exec rake spec
