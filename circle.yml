@@ -1,3 +1,9 @@
+machine:
+ pre:
+  - rvm use 2.0.0
+ ruby:
+  version: ruby-2.0.0
+
 dependencies:
  pre:
   - bash ./bundle-install.sh
