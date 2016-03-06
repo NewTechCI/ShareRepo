@@ -1,7 +1,6 @@
 dependencies:
  pre:
-  - pwd
-  - cd NewTechCI/ShareRepo/serverspec
+  - cd serverspec
 
   - bundle install
 test:
