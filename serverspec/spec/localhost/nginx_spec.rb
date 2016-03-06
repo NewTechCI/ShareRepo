@@ -1,9 +1,3 @@
-require 'serverspec'
-
-set :backend, :exec
-
-[root@ip-10-10-1-43 spec]# cd localhost/
-[root@ip-10-10-1-43 localhost]# cat nginx_spec.rb
 require 'spec_helper'
 
 describe package('nginx') do
