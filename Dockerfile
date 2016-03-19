@@ -24,6 +24,6 @@ Add default.conf /etc/nginx/conf.d/default.conf
 ADD src /var/www
 
 # expose memcached port
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["service","nginx","start"]
