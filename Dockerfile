@@ -1,17 +1,30 @@
-# 1.ベースイメージの取得
-FROM centos:latest
+# Memcached
+#
+# VERSION       42
 
-# 2.作成者情報
-MAINTAINER 0.1 n.nagasi1@gmail.com
+# use the ubuntu base image provided by dotCloud
+FROM centos
 
-# 3.Apache HTTP Serverのインストール
-RUN yum -y install httpd
+MAINTAINER yoshiso
 
-# 4.Webコンテンツの配置
-ADD html/ /var/www/html/
+RUN yum -y update
 
-# 5.ポートの解放
+# make sure the package repository is up to date
+ADD nginx.repo /etc/yum.repos.d/nginx.repo
+RUN chmod 0644 /etc/yum.repos.d/nginx.repo
+
+# install memcached
+RUN yum install -y nginx
+
+ADD nginx.conf /etc/nginx/nginx.conf
+Add default.conf /etc/nginx/conf.d/default.conf
+
+# Nginx public directory
+
+ADD src /var/www
+
+# expose memcached port
 EXPOSE 80
 
-# 6.httpdの実行
-CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
+CMD ["service","nginx","start"]
+
