@@ -3,9 +3,9 @@
 # VERSION       42
 
 # use the ubuntu base image provided by dotCloud
-FROM centos
+FROM nnagasi/centos_base:1.0
 
-MAINTAINER yoshiso
+MAINTAINER n_nagasi
 
 RUN yum -y update
 
@@ -27,4 +27,3 @@ ADD src /var/www
 EXPOSE 80
 
 CMD ["service","nginx","start"]
-
