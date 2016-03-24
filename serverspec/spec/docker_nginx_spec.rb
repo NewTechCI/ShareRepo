@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe package('nginx') 'DockerƒRƒ“ƒeƒi'do
+describe package('nginx') do
   it { should be_installed }
 end
 
