@@ -5,4 +5,7 @@ cd serverspec
 #bundle exec rspec spec/localhost/nginx_spec.rb
 
 #テストが通るテストコード
-bundle exec rspec spec/localhost/ruby_spec.rb
+#bundle exec rspec spec/localhost/ruby_spec.rb
+
+#Dockerコンテナ用
+bundle exec rspec
