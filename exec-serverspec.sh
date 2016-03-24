@@ -8,4 +8,4 @@ cd serverspec
 #bundle exec rspec spec/localhost/ruby_spec.rb
 
 #Dockerコンテナ用
-bundle exec rspec
+bundle exec rspec spec/docker_nginx_spec.rb
