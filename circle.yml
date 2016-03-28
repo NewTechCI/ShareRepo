@@ -17,7 +17,7 @@ dependencies:
  override:
   - docker info
   - bash ./docker-build.sh
-  - docker run -d -p 80:8080 newtechci/docker-circleci
+  #- docker run -d -p 80:8080 newtechci/docker-circleci
 
 test:
   override:
