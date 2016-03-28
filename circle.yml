@@ -3,16 +3,20 @@ machine:
   - rvm use 2.0.0
  ruby:
   version: ruby-2.0.0
+ timezone:
+    Asia/Tokyo
  services:
   - docker
 
 dependencies:
+ cache_directories:
+  - "~/cache"
  pre:
   - bash ./bundle-install.sh
   - bash ./create-rspec-file.sh
  override:
   - docker info
-  - docker build -t newtechci/docker-circleci .
+  - bash ./docker-build.sh
 
 test:
   override:
