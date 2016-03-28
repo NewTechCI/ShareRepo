@@ -10,13 +10,18 @@ machine:
 
 dependencies:
  cache_directories:
-  - "~/cache"
+  - "~/docker"
  pre:
+ - docker info
+    - if [[ -e ~/docker/image.tar ]]; then docker load --input ~/docker/image.tar; fi
+    - docker build -t newtechci/docker-circleci .
+    - mkdir -p ~/docker; docker save newtechci/docker-circleci > ~/docker/image.tar
+
   - bash ./bundle-install.sh
   - bash ./create-rspec-file.sh
  override:
   - docker info
-  - bash ./docker-build.sh
+  #- bash ./docker-build.sh
 
 test:
   override:
