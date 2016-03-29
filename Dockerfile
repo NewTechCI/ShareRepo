@@ -28,4 +28,5 @@ ADD src /var/www
 
 EXPOSE 80
 
+
 CMD ["service","nginx","start"]
