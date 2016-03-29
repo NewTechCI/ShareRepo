@@ -4,6 +4,8 @@ set -xe
 if [ -e ~/cache/docker-circleci.tar ] && [ $(md5sum Dockerfile | cut -d' ' -f1) = $(cat ~/cache/dockerfile.digest) ]
 then
   docker load < ~/cache/docker-circleci.tar
+  docker push nnagasi/docker-circleci
+  
 else
   mkdir -p ~/cache
   #docker build -t newtechci/docker-circleci .
@@ -13,7 +15,7 @@ else
   docker save nnagasi/docker-circleci > ~/cache/docker-circleci.tar
 
   docker push nnagasi/docker-circleci
-  
+
 #
 
 fi
