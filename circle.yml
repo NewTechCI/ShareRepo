@@ -21,6 +21,6 @@ dependencies:
 
 test:
   override:
-   #- docker run -d -p 80:80 newtechci/docker-circleci
-   - docker run -d -p 80:80 nnagasi/docker-circleci
+   - docker run -d -p 80:80 newtechci/docker-circleci
+   #- docker run -d -p 80:80 nnagasi/docker-circleci
    - bash ./exec-serverspec.sh
