@@ -2,7 +2,9 @@ machine:
  pre:
   - rvm use 2.0.0
  ruby:
-  version: ruby-2.0.0
+#  version: ruby-2.0.0
+  version: ruby-2.1.4
+
  timezone:
     Asia/Tokyo
  services:
