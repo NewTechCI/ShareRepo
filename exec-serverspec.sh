@@ -1,11 +1,11 @@
 #!/bin/bash
 
 cd serverspec
-#ï¿½eï¿½Xï¿½gï¿½ï¿½ï¿½Ê‚ï¿½ï¿½È‚ï¿½ï¿½eï¿½Xï¿½gï¿½Rï¿½[ï¿½h
+#ƒeƒXƒg‚ª’Ê‚ç‚È‚¢ƒeƒXƒgƒR[ƒh
 #bundle exec rspec spec/localhost/nginx_spec.rb
 
-#ï¿½eï¿½Xï¿½gï¿½ï¿½ï¿½Ê‚ï¿½ï¿½eï¿½Xï¿½gï¿½Rï¿½[ï¿½h
+#ƒeƒXƒg‚ª’Ê‚éƒeƒXƒgƒR[ƒh
 #bundle exec rspec spec/localhost/ruby_spec.rb
 
-#Dockerï¿½Rï¿½ï¿½ï¿½eï¿½iï¿½p
+#DockerƒRƒ“ƒeƒi—p
 bundle exec rspec spec/docker_nginx_spec.rb

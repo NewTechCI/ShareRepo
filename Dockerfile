@@ -5,7 +5,7 @@
 # use the ubuntu base image provided by dotCloud
 FROM nnagasi/centos_base:1.0
 
-MAINTAINER n_nagasi111
+MAINTAINER n_nagasi1111
 
 RUN yum -y update
 
@@ -24,6 +24,9 @@ Add default.conf /etc/nginx/conf.d/default.conf
 ADD src /var/www
 
 # expose memcached port
-EXPOSE 8080
+#EXPOSE 8080
+
+EXPOSE 80
+
 
 CMD ["service","nginx","start"]
