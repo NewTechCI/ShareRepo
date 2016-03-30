@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'specinfra' , '2.12.7'
+gem 'specinfra' , '2.15.1'
 gem 'serverspec'
 gem 'rake'
 gem 'docker-api'
