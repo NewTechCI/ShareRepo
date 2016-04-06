@@ -5,7 +5,11 @@
 # use the ubuntu base image provided by dotCloud
 FROM nnagasi/centos_base:1.0
 
+<<<<<<< HEAD
 MAINTAINER n_nagasi11
+=======
+MAINTAINER n_nagasi1
+>>>>>>> a2f24581bb9a1612949f8d50e98a6d628dd58790
 
 RUN yum -y update
 
