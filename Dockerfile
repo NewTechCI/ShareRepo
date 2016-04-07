@@ -7,7 +7,7 @@ FROM nnagasi/centos_base:1.0
 
 #
 #MAINTAINER n_nagasi11
-MAINTAINER n_nagasi2
+MAINTAINER n_nagasi234
 
 RUN yum -y update
 
