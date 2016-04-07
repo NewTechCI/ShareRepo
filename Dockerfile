@@ -9,7 +9,7 @@ FROM nnagasi/centos_base:1.0
 #MAINTAINER n_nagasi11
 MAINTAINER n_nagasi2345
 
-RUN yum -y update
+#RUN yum -y update
 
 # make sure the package repository is up to date
 ADD nginx.repo /etc/yum.repos.d/nginx.repo
