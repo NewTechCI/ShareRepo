@@ -1,8 +1,8 @@
 machine:
  pre:
-  - rvm use 2.0.0
+  - rvm use 2.3.0
 # ruby:
-#  version: ruby-2.0.0
+  version: ruby-2.3.0
 #  version: ruby-2.1.4
 
  timezone:
