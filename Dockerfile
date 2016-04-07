@@ -5,6 +5,7 @@
 # use the ubuntu base image provided by dotCloud
 FROM nnagasi/centos_base:1.0
 
+#
 #MAINTAINER n_nagasi11
 MAINTAINER n_nagasi1
 
