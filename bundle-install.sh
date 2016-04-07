@@ -2,8 +2,8 @@
 
 cd serverspec
 ruby -v
-rvm list known
+#rvm list known
 #gem list net-ssh -ar
-bundle update
-cat Gemfile.lock
+#bundle update
+#cat Gemfile.lock
 bundle install

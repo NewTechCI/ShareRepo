@@ -15,7 +15,7 @@ dependencies:
  cache_directories:
   - "~/cache"
  pre:
-#  - bash ./bundle-install.sh
+  - bash ./bundle-install.sh
   - bash ./create-rspec-file.sh
  override:
   - docker info
