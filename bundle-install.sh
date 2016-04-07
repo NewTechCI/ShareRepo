@@ -6,4 +6,5 @@ ruby -v
 #gem list net-ssh -ar
 #bundle update
 #cat Gemfile.lock
-bundle install
+#bundle install
+bundle update
