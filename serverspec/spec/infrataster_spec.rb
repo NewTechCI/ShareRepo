@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe server(:ex) do
     before { @url = "http://" + ENV["DOCKER_IP"] }
 
