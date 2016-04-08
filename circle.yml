@@ -32,6 +32,7 @@ test:
 
    - DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
    - echo `docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
+   - echo $DOCKER_IP
    - export DOCKER_IP
    - printenv
 
