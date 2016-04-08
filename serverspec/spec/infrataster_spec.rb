@@ -6,8 +6,8 @@ describe server(:ex) do
             expect(response.status).to eq(200)
         end
 
-        it 'example' do
-            expect(response.body).to include('example')
+        it 'response Docker Samples' do
+            expect(response.body).to include('Docker Samples')
         end
     end
 end

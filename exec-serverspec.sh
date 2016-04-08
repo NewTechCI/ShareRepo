@@ -3,7 +3,6 @@
 #infrataster
 DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
 export DOCKER_IP
-printenv DOCKER_IP
 cd serverspec
 #テストが通らないテストコード
 #bundle exec rspec spec/localhost/nginx_spec.rb

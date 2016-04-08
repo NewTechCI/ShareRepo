@@ -30,12 +30,6 @@ test:
   override:
    #- docker run -d -p 80:80 newtechci/docker-circleci
 
-   - DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
-   - echo `docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
-   - echo $DOCKER_IP
-   - export DOCKER_IP
-   - printenv
-
    #- docker run -d -p 80:80 nnagasi/docker-circleci
    - bash ./exec-serverspec.sh
 
