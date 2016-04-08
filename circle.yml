@@ -3,7 +3,6 @@ machine:
   - rvm use 2.3.0
  ruby:
   version: ruby-2.3.0
-#  version: ruby-2.1.4
 
  environment:
   DOCKER_IP: 
@@ -23,15 +22,13 @@ dependencies:
  override:
   - docker info
   - bash ./docker-build.sh
-  #- docker run -d -p 80:8080 newtechci/docker-circleci
 
   - docker run --name newtech -d -p 8080:80 nnagasi/docker-circleci
 test:
   override:
-   #- docker run -d -p 80:80 newtechci/docker-circleci
-
    #- docker run -d -p 80:80 nnagasi/docker-circleci
    - bash ./exec-serverspec.sh
+   - bash ./exec-infrataster.sh
 
 deployment:
   hub:

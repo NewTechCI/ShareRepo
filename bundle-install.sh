@@ -3,9 +3,9 @@
 cd serverspec
 ruby -v
 #infrataster“±“ü—p
-apt-get install -y libxml2 libxml2-devel libxslt libxslt-devel
+#apt-get install -y libxml2 libxml2-devel libxslt libxslt-devel
 bundle config build.nokogiri --use-system-libraties
 
-#for debug
+#debug—p
 #rvm list known
 bundle install
