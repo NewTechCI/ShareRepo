@@ -3,7 +3,7 @@
 #infrataster
 docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech
 
-DOCKER_IP=`docker-machine ip local`
+DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
 echo $DOCKER_IP
 cd serverspec
 #テストが通らないテストコード
