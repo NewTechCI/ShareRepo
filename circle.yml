@@ -5,6 +5,9 @@ machine:
   version: ruby-2.3.0
 #  version: ruby-2.1.4
 
+ environment:
+  DOCKER_IP: 
+
  timezone:
     Asia/Tokyo
  services:
