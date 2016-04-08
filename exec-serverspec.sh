@@ -1,8 +1,7 @@
 #!/bin/bash
 
 #infrataster
-#docker inspect --format '{{.Id}}' newtech
-docker inspect newtech
+docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech
 
 DOCKER_IP=`docker-machine ip local`
 echo $DOCKER_IP
