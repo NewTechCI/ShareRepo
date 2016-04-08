@@ -9,3 +9,4 @@ cd serverspec
 
 #Dockerコンテナ用
 bundle exec rspec spec/docker_nginx_spec.rb
+bundle exec rspec spec/infrataster_spec.rb
