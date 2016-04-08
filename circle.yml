@@ -28,6 +28,7 @@ test:
    #- docker run -d -p 80:80 newtechci/docker-circleci
 
    - export DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
+   - printenv DOCKER_IP
 
    #- docker run -d -p 80:80 nnagasi/docker-circleci
    - bash ./exec-serverspec.sh
