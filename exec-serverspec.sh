@@ -1,9 +1,8 @@
 #!/bin/bash
 
 #infrataster
-#docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech
-
-#DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
+DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
+export DOCKER_IP
 printenv DOCKER_IP
 cd serverspec
 #テストが通らないテストコード
