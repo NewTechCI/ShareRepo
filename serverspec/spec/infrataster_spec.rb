@@ -6,7 +6,7 @@ describe server(:ex) do
             expect(response.status).to eq(200)
         end
 
-        it 'example‚ª‚ ‚é‚©' do
+        it 'example' do
             expect(response.body).to include('example')
         end
     end
