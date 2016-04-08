@@ -22,7 +22,7 @@ dependencies:
   - bash ./docker-build.sh
   #- docker run -d -p 80:8080 newtechci/docker-circleci
 
-  - docker run -d -p 8080:80 nnagasi/docker-circleci --name newtech
+  - docker run --name newtech -d -p 8080:80 nnagasi/docker-circleci
 test:
   override:
    #- docker run -d -p 80:80 newtechci/docker-circleci

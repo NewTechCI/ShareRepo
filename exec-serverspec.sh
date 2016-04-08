@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #infrataster
-docker inspect newtech
+docker inspect --format '{{.Id}}' newtech
 DOCKER_IP=`docker-machine ip local`
 echo $DOCKER_IP
 cd serverspec
