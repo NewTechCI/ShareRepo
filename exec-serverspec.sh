@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#infrataster
+DOCKER_IP='docker-machine ip local'
 cd serverspec
 #テストが通らないテストコード
 #bundle exec rspec spec/localhost/nginx_spec.rb

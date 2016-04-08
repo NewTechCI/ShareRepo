@@ -1,5 +1,5 @@
 describe server(:ex) do
-    before { @url = "http://" + ENV["DOCKER_HOST"] }
+    before { @url = "http://" + ENV["DOCKER_IP"] }
 
     describe http(@url) do
         it 'returns 200' do

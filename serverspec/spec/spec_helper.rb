@@ -17,5 +17,5 @@ Excon.defaults[:ssl_verify_peer] = false
 RSpec.configuration.include RSpec::JsonMatcher
 Infrataster::Server.define(
     :ex,
-    ENV["DOCKER_HOST"]
+    ENV["DOCKER_IP"]
 )
