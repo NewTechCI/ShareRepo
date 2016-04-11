@@ -1,7 +1,7 @@
 # Memcached
 #
 # VERSION       42
-#デモ実行
+
 # use the ubuntu base image provided by dotCloud
 FROM nnagasi/centos_base:1.0
 
