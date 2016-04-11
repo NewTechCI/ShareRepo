@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-#CircleCI�Ή�
+#CircleCI
 if ENV['CIRCLECI']
  class Docker::Container
   def remove(options={}); end

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#infrataster(helper‚ğ‹¤—L‚µ‚Ä‚¢‚é‚½‚ß—¼•û‚É’è‹`)
+#infrataster(helperå…±æœ‰ã®ãŸã‚ä¸¡æ–¹ã«è¨˜è¿°)
 DOCKER_IP=`docker inspect --format '{{.NetworkSettings.IPAddress}}' newtech`
 export DOCKER_IP
 cd serverspec
