@@ -7,7 +7,11 @@ FROM nnagasi/centos_base:1.0
 
 #
 #MAINTAINER n_nagasi11
+<<<<<<< HEAD
 MAINTAINER n_nagasi2
+=======
+MAINTAINER n_nagasi22
+>>>>>>> ee3ba0743a556b25f0fa5c58c1ed7bf708f6048d
 
 #RUN yum -y update
 
