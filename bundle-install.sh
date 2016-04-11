@@ -8,5 +8,5 @@ bundle config build.nokogiri --use-system-libraties
 
 #debug�p
 #rvm list known
-bundle install
-#bundle update
+#bundle install
+bundle update
